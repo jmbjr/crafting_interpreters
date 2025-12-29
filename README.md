@@ -63,4 +63,12 @@ BUILD SUCCESSFUL in 1s
 1 actionable task: 1 executed
 Configuration cache entry stored.
 ```
+## set up vscode java extensions
+- Java extension pack
+- Gradle for Java
+- FWCD Kotlin
 
+## set up java language server if needed.
+- ctrl + shift + P and search for "Open User Settings (JSON)"
+- add: `"java.jdt.ls.java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot"    `
+- NOTE: you should point to a jdk installed on your system.  seems like you can use 17 for a version 21 project.
