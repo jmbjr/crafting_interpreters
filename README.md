@@ -72,3 +72,20 @@ Configuration cache entry stored.
 - ctrl + shift + P and search for "Open User Settings (JSON)"
 - add: `"java.jdt.ls.java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot"    `
 - NOTE: you should point to a jdk installed on your system.  seems like you can use 17 for a version 21 project.
+
+## to rebuild Expr.java create `.vscode/launch.json` with the code:
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug GenerateAst",
+      "request": "launch",
+      "mainClass": "com.craftinginterpreters.tool.GenerateAst",
+      "args": ["app/src/main/java/com/craftinginterpreters/lox/"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
+```
